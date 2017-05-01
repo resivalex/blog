@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a {
+    color: black;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  text-align: center;
+  height: 40px;
+}
