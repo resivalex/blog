@@ -8,22 +8,28 @@ import { FilterPipe } from '../filter.pipe';
 })
 export class HomeComponent implements OnInit {
 
-  name = "Castle";
-  title = "Welcom to home";
+  name = 'Castle';
+  title = 'Welcom to home';
   phones = [
-    { date: "2016", brand: "Samsung", color: 'blue' },
+    { date: '2016', brand: 'Samsung', color: 'blue' },
     { date: '2017', brand: 'iPhone', color: 'black' },
     { date: '2017', brand: 'Xiomi', color: 'darkgreen' }
+  ];
+  knownTechnologies = [
+    'JavaScript', 'Haskell', 'TypeScript', 'Angular', 'SQL',
+     'Stash', 'JIRA', 'Confluence', 'SVN', 'Git',
+     'C++', 'Boost', 'Thread', 'WebSocket', 'JSON',
+     'GitHub', 'Bitbucket', 'Web API'
   ];
   // @Input() phone;
   @Output() onYell = new EventEmitter();
 
   log(val) {
-    console.log("test, " + val);
+    console.log('test, ' + val);
   }
 
   fireYellEvent(e) {
-    console.log("Fire!");
+    console.log('Fire!');
     this.onYell.emit(e);
   }
 

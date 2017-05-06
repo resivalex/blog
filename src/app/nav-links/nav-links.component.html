@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let link of links" [ngClass]="{ 'active': router.url == link.url }">
+    <a [routerLink]="[link.url]">{{link.name}}</a>
+  </li>
+</ul>
