@@ -1,0 +1,17 @@
+version: "3"
+services:
+  nginx:
+    build: ./dockers/nginx
+    ports:
+      - 80:80
+    depends_on:
+      - angular
+    links: 
+      - angular
+  angular:
+    build: .
+    command: ng serve --host 0.0.0.0
+    expose:
+      - 4200
+    ports:
+      - 4200:4200
