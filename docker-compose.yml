@@ -10,7 +10,7 @@ services:
       - angular
   angular:
     build: .
-    command: ng serve --host 0.0.0.0
+    command: npm start
     expose:
       - 4200
     ports:
