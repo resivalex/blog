@@ -1,5 +1,4 @@
-FROM node:6.11.0
-RUN npm install -g @angular/cli
+FROM node:8.1.1
 RUN npm install -D ts-node
 RUN npm install -S @angular/platform-server @angular/animations
 
