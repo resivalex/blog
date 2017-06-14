@@ -22,7 +22,7 @@ import { NavLinksComponent } from './nav-links/nav-links.component'
     NavLinksComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({appId: 'blog'}),
     FormsModule,
     HttpModule,
     RouterModule.forRoot(APP_ROUTES)
