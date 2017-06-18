@@ -9,8 +9,8 @@ li {
   margin-bottom: 8px;
   border-radius: 20px;
   display: inline-block;
-}
 
-li:not(:last-of-type) {
-  margin-right: 4px;
+  &:not(:last-of-type) {
+    margin-right: 4px;
+  }
 }

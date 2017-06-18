@@ -1,0 +1,46 @@
+ul {
+  padding: 20px;
+}
+
+li {
+  list-style: none;
+  border: solid 1px black;
+  margin: 0;
+  float: left;
+
+  &:first-of-type {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    a {
+      padding-left: 15px;
+    }
+  }
+
+  &:last-of-type {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    a {
+      padding-right: 15px;
+    }
+  }
+
+  &:not(:last-of-type) {
+    border-right-width: 0;
+  }
+
+  &.active {
+    background-color: black;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  a {
+    padding: 5px 10px;
+    float: left;
+  }
+}

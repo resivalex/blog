@@ -1,0 +1,15 @@
+.card {
+  border: solid 1px black;
+  padding: 8px;
+  margin-bottom: 16px;
+
+  .title {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+  }
+
+  .summary {
+    font-style: italic;
+  }
+}

@@ -10,7 +10,8 @@ import { RouterModule } from '@angular/router'
 import { APP_ROUTES } from './app.routes';
 import { FilterPipe } from './filter.pipe';
 import { TagListComponent } from './tag-list/tag-list.component';
-import { NavLinksComponent } from './nav-links/nav-links.component'
+import { NavLinksComponent } from './nav-links/nav-links.component';
+import { NoteCardComponent } from './note-card/note-card.component'
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NavLinksComponent } from './nav-links/nav-links.component'
     DirectoryComponent,
     FilterPipe,
     TagListComponent,
-    NavLinksComponent
+    NavLinksComponent,
+    NoteCardComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'blog'}),
