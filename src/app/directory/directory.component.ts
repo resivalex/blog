@@ -9,10 +9,9 @@ import { NoteStorageService } from '../note-storage.service'
 })
 export class DirectoryComponent implements OnInit {
 
-  notes = [];
+  notes: Array<object>;
 
   constructor(private route: ActivatedRoute, private noteStorage: NoteStorageService) { 
-    //this.test = route.snapshot.params['test'];
     this.notes = noteStorage.all();
   }
 

@@ -11,7 +11,8 @@ import { APP_ROUTES } from './app.routes';
 import { FilterPipe } from './filter.pipe';
 import { TagListComponent } from './tag-list/tag-list.component';
 import { NavLinksComponent } from './nav-links/nav-links.component';
-import { NoteCardComponent } from './note-card/note-card.component'
+import { NoteCardComponent } from './note-card/note-card.component';
+import { NoteComponent } from './note/note.component'
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NoteCardComponent } from './note-card/note-card.component'
     FilterPipe,
     TagListComponent,
     NavLinksComponent,
-    NoteCardComponent
+    NoteCardComponent,
+    NoteComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'blog'}),

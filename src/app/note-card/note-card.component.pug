@@ -1,3 +1,4 @@
-.card
-  .title {{noteData.title}}
-  .summary {{noteData.summary}}
+a([routerLink]="['/notes', id]")
+  .card
+    .title {{note.title}}
+    .summary {{note.summary}}

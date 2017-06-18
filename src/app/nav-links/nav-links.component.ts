@@ -9,7 +9,6 @@ import { Router } from '@angular/router';
 export class NavLinksComponent implements OnInit {
 
   router: Router;
-  linkClasses = "test";
   links = [
     { name: 'Profile', url: '/' },
     { name: 'Notes', url: '/notes' }

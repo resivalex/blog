@@ -1,3 +1,3 @@
-app-note-card(*ngFor="let note of notes", [noteData]="note")
+app-note-card(*ngFor="let note of notes; let id = index", [note]="note", [id]="id")
 p.
   Made with Angular
