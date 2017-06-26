@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { NoteStorageService } from '../note-storage.service'
+import { NOTE_STORAGE_TOKEN } from '../../note-storage-token'
 
 @Component({
   selector: 'app-directory',
@@ -11,7 +11,7 @@ export class DirectoryComponent implements OnInit {
 
   notes: Array<object>;
 
-  constructor(private route: ActivatedRoute, private noteStorage: NoteStorageService) { 
+  constructor(private route: ActivatedRoute, @Inject(NOTE_STORAGE_TOKEN) private noteStorage) {
     this.notes = noteStorage.all();
   }
 

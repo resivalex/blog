@@ -12,7 +12,9 @@ import { FilterPipe } from './filter.pipe';
 import { TagListComponent } from './tag-list/tag-list.component';
 import { NavLinksComponent } from './nav-links/nav-links.component';
 import { NoteCardComponent } from './note-card/note-card.component';
-import { NoteComponent } from './note/note.component'
+import { NoteComponent } from './note/note.component';
+import { NoteStorageService } from './note-storage.service';
+import { NOTE_STORAGE_TOKEN } from '../note-storage-token'
 
 @NgModule({
   declarations: [
@@ -31,7 +33,7 @@ import { NoteComponent } from './note/note.component'
     HttpModule,
     RouterModule.forRoot(APP_ROUTES)
   ],
-  providers: [],
+  providers: [NoteStorageService, { provide: NOTE_STORAGE_TOKEN, useExisting: NoteStorageService }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

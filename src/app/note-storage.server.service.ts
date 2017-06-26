@@ -6,7 +6,7 @@ export class NoteStorageService implements NoteStorageInterface {
 
   data = [
     {
-      title: 'Phone number placeholder',
+      title: 'Server-side version',
       summary: 'Working example',
       text: "..."
     },
